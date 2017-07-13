@@ -8,7 +8,7 @@ class Db
 
 
     public function __construct() {
-        $this->dbh = new \PDO('mysql:host=127.0.0.1;dbname=test', 'root', '123');
+        $this->dbh = new \PDO('mysql:host=127.0.0.1;dbname=test; charset=utf8;', 'root', '123');
     }
     
     public function execute($sql)
